@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "lemon_pie",
+  "version": "${version}",
+  "name": "Lemon Pie",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/lemon_pie/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.lilbrocodes.lemon_pie.client.LemonPieClient"
+    ],
+    "main": [
+      "org.lilbrocodes.lemon_pie.LemonPie"
+    ]
+  },
+  "mixins": [
+    "lemon_pie.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "fzzy_config": ">=${fzzy_version}"
+  }
+}
